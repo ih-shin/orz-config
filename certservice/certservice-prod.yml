@@ -6,6 +6,8 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: health
+
+
 
 signing.key: "345345fsdfsf5345"
