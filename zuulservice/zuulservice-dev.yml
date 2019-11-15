@@ -18,6 +18,7 @@ eureka:
         
         
 zuul:
+  prefix: /api
   routes:
     certservice: /cert/**
     
