@@ -20,3 +20,11 @@ eureka:
 zuul:
   routes:
     certservice: /cert/**
+    
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
