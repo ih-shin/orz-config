@@ -1,6 +1,6 @@
 #server
 server:
-  port: 9002
+  port: 9011
 
 #datasource
 spring:
