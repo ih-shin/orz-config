@@ -1,8 +1,6 @@
 #server
 server:
   port: 9002
-  servlet:
-    contextPath: /auth
 
 #datasource
 spring:
