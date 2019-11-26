@@ -1,6 +1,8 @@
 #server
 server:
   port: 9002
+  servlet:
+    contextPath: /auth
 
 #datasource
 spring:
@@ -33,4 +35,7 @@ management:
       exposure:
         include: health
 
-signing.key: "345345fsdfsf5345"
+security:
+  oauth2:
+    jwt:
+      signkey: "123@#$"
