@@ -17,10 +17,10 @@ eureka:
         defaultZone: http://localhost:8761/eureka/
         
         
-zuul:
-  prefix: /api
-  routes:
-    certservice: /cert/**
+#zuul:
+#  prefix: /api
+#  routes:
+#    certservice: /cert/**
     
 hystrix:
   command:
