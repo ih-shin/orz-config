@@ -1,8 +1,6 @@
 #server
 server:
   port: 11000
-  servlet: 
-    context-path: /aouth
   use-forward-headers: false
 
 #datasource
