@@ -12,7 +12,7 @@ spring:
     validationQuery: SELECT 1
   jpa:
     hibernate:
-      ddl-auto: validate 
+      ddl-auto: update #validate 
     show-sql: true
   resources:
     add-mappings: false
@@ -32,8 +32,3 @@ management:
     web:
       exposure:
         include: health
-
-security:
-  oauth2:
-    jwt:
-      signkey: "123@#$"
