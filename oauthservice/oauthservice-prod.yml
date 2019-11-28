@@ -1,7 +1,8 @@
 #server
 server:
   port: 12021
-  context-path: oauthservice
+  servlet:
+    context-path: /authorization-server-1
   use-forward-headers: false
 
 #datasource
