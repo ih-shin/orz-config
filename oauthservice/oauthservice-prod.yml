@@ -1,6 +1,7 @@
 #server
 server:
   port: 12021
+  context-path: oauthservice
   use-forward-headers: false
 
 #datasource
