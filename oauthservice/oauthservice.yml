@@ -1,6 +1,6 @@
 #server
 server:
-  port: 11000
+  port: 12021
   use-forward-headers: false
 
 #datasource
@@ -29,12 +29,13 @@ eureka:
         #defaultZone: http://localhost:12001/eureka/, http://localhost:12002/eureka/
         
 security:
+  basic:
+    enabled: false
+  ignored: /css/**,/js/**,/favicon.ico,/webjars/**
   oauth2:
     resource:
       jwt:
-        keyValue: "abc"
-      id: read
-      serviceId: ${PREFIX:}resource
+        keyValue: abc
 
 management:
   endpoints:
