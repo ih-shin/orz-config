@@ -28,7 +28,7 @@ security:
     sso:
       loginPath: /login
     client:
-      access-token-uri: http://localhost:12021/oauth/token 
+      access-token-uri: http://localhost:12021/oauthservice/oauth/token 
       user-authorization-uri: /oauthservice/oauth/authorize 
       authorized-grant-types: password
       client-id: testClientId 
