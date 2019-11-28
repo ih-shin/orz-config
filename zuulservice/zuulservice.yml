@@ -5,7 +5,7 @@ management:
         include: "*"
 
 server:
-  port: 10004
+  port: 12011
 
 eureka:
   instance:
@@ -14,7 +14,30 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-        defaultZone: http://localhost:8761/eureka/
+        defaultZone: http://localhost:12001/eureka/
+        #defaultZone: http://localhost:12001/eureka/, http://localhost:12002/eureka/
+
+zuul:
+  routes:
+    resource-server-mvc-1: /userservice/**
+    authorization-server-1:
+      sensitiveHeaders: Authorization
+      path: /oauthservice/**
+      stripPrefix: false
+  add-proxy-headers: true
+        
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      access-token-uri: http://localhost:12021/oauth/token 
+      user-authorization-uri: /oauthservice/oauth/authorize 
+      client-id: testClientId 
+      client-secret: 1234 
+    resource:
+      jwt:
+        key-value: abc
         
         
 #zuul:
