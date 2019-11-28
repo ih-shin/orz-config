@@ -46,3 +46,8 @@ management:
     web:
       exposure:
         include: health
+        
+spring:
+    freemarker:
+        template-loader-path: classpath:/templates
+        suffix: .ftlh
