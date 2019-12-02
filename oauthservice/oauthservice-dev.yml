@@ -19,6 +19,10 @@ spring:
     show-sql: true
   resources:
     add-mappings: false
+  freemarker:
+    template-loader-path: classpath:/templates
+    prefix: /freemarker/
+    suffix: .ftl
 
 eureka:
   instance:
