@@ -20,7 +20,8 @@ spring:
   resources:
     add-mappings: false
   freemarker:
-    template-loader-path: classpath:/templates/
+    enable: true
+    template-loader-path: classpath:/templates
     suffix: .ftl
 
 eureka:
