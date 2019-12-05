@@ -20,6 +20,7 @@ zuul:
       path: /oauthservice/**
       stripPrefix: false
   add-proxy-headers: true
+  sesnsitiveHeaders: Cookie,Set-Cookie
         
 security:
   basic:
